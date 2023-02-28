@@ -3234,7 +3234,6 @@
                         tabTitle.classList.add("_tab-active");
                         setTabsStatus(tabsBlock);
                     }
-                    e.preventDefault();
                 }
             }
         }
@@ -3563,7 +3562,7 @@
                 window.requestAnimationFrame(step);
             }
             let options = {
-                threshold: .5
+                threshold: 1
             };
             let observer = new IntersectionObserver(((entries, observer) => {
                 entries.forEach((entry => {
@@ -3574,7 +3573,7 @@
                     }
                 }));
             }), options);
-            let sections = document.querySelectorAll("section");
+            let sections = document.querySelectorAll(".blog-counter__title");
             if (sections.length) sections.forEach((section => {
                 observer.observe(section);
             }));

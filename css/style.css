@@ -1541,7 +1541,7 @@ h6 {
   opacity: 1;
 }
 .our-ig-contacts__contact._tab-active a {
-  pointer-events: all;
+  pointer-events: auto;
 }
 @media (min-width: 97.5em) {
   .our-ig-contacts__contact:first-child {
