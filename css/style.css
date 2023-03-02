@@ -1789,6 +1789,11 @@ h6 {
     padding: 0;
   }
 }
+@media (max-width: 25em) {
+  .video-block__container {
+    padding: 0;
+  }
+}
 .video-block__main {
   position: relative;
 }
