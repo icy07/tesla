@@ -6964,6 +6964,26 @@
                 observer.observe(section);
             }));
         }
+        let playButton = document.querySelector(".video-block__play-btn");
+        let video = document.querySelector(".video");
+        if (playButton && video) {
+            playButton.addEventListener("click", (function() {
+                if (true == video.paused) {
+                    video.play();
+                    playButton.classList.add("_active");
+                } else {
+                    video.pause();
+                    playButton.classList.remove("_active");
+                }
+            }));
+            video.addEventListener("pause", (function() {
+                playButton.classList.remove("_active");
+            }));
+            video.addEventListener("play", (function() {
+                playButton.classList.add("_active");
+            }));
+            if (window.innerWidth < 600) video.removeAttribute("autoplay");
+        }
         isWebp();
         tabs();
         formFieldsInit({

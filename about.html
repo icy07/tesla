@@ -5,7 +5,7 @@
 	<title>О нас</title>
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
-	<link rel="stylesheet" href="css/style.min.css?_v=20230323150105">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230323185929">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -49,6 +49,9 @@
 						<p class="blog-main__subtitle">
 							Мы продаём свободу, а также <br> новые стандарты комфорта <br> и безопасности
 						</p>
+						<a href="#" class="blog-main__link bd-btn pc-hidden">
+							Заказать авто
+						</a>
 					</div>
 					<button class="blog-main__arrow" data-goto=".video-block">
 						<svg width="34" height="17" viewBox="0 0 34 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -64,11 +67,14 @@
 						<div class="video-block__tesla-img">
 							<img src="img/tesla-logo-dark.svg" alt="TESLA">
 						</div>
-						<video src="files/tesla.mp4" controls autoplay muted loop></video>
+						<div class="video-block__wrapper">
+							<video class="video" src="files/tesla.mp4" controls autoplay muted loop></video>
+							<button class="video-block__play-btn"></button>
+						</div>
 					</div>
 				</div>
 			</section>
-			<section class="delivery-process delivery-process--text-first">
+			<section class="delivery-process delivery-process--border delivery-process--text-first">
 				<div class="delivery-process__container">
 					<div class="delivery-process__main">
 						<div class="delivery-process__block">
@@ -106,7 +112,7 @@
 					<h2 class="white-block__title title">
 						Верите ли вы в любовь <br> с первого взгляда?
 					</h2>
-					<a href="#" class="white-block__top-link bd-btn bd-btn--dark">
+					<a href="#" class="white-block__top-link pc-hidden bd-btn bd-btn--dark">
 						Записаться
 					</a>
 				</div>
@@ -142,6 +148,9 @@
 							</p>
 						</div>
 					</div>
+					<a href="#" class="test-drive__link">
+						Посмотреть страницу авто
+					</a>
 				</div>
 			</section>
 			<section class="img-tab">
@@ -209,7 +218,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="delivery-process">
+			<section class="delivery-process delivery-process--border">
 				<div class="delivery-process__container">
 					<div class="delivery-process__main">
 						<div class="delivery-process__block">
@@ -298,12 +307,7 @@
 										Александр Козловский
 									</p>
 									<p class="reviews__text">
-										Заказал в Автотрейдер свой первый Тесла. Процессом и результатом работы остался доволен.
-										Все четко и понятно, 24/7 были
-										на связи. Ребята помогли еще справиться с задачей получения электродного ПТС. Рекомендую,
-										было приятно работать ! Был на
-										связи с менеджером Владимиром.
-										Заказал в Автотрейдер свой первый Тесла. Процессом и результатом работы остался доволен.
+										1 Заказал в Автотрейдер свой первый Тесла. Процессом и результатом работы остался доволен.
 										Все четко и понятно, 24/7 были
 										на связи. Ребята помогли еще справиться с задачей получения электродного ПТС. Рекомендую,
 										было приятно работать ! Был на
@@ -323,7 +327,7 @@
 										Александр Козловский
 									</p>
 									<p class="reviews__text">
-										Заказал в Автотрейдер свой первый Тесла. Процессом и результатом работы остался доволен.
+										2 Заказал в Автотрейдер свой первый Тесла. Процессом и результатом работы остался доволен.
 										Все четко и понятно, 24/7 были
 										на связи. Ребята помогли еще справиться с задачей получения электродного ПТС. Рекомендую,
 										было приятно работать ! Был на
@@ -343,7 +347,7 @@
 										Александр Козловский
 									</p>
 									<p class="reviews__text">
-										Заказал в Автотрейдер свой первый Тесла. Процессом и результатом работы остался доволен.
+										3 Заказал в Автотрейдер свой первый Тесла. Процессом и результатом работы остался доволен.
 										Все четко и понятно, 24/7 были
 										на связи. Ребята помогли еще справиться с задачей получения электродного ПТС. Рекомендую,
 										было приятно работать ! Был на
@@ -363,7 +367,7 @@
 										Александр Козловский
 									</p>
 									<p class="reviews__text">
-										Заказал в Автотрейдер свой первый Тесла. Процессом и результатом работы остался доволен.
+										4 Заказал в Автотрейдер свой первый Тесла. Процессом и результатом работы остался доволен.
 										Все четко и понятно, 24/7 были
 										на связи. Ребята помогли еще справиться с задачей получения электродного ПТС. Рекомендую,
 										было приятно работать ! Был на
@@ -410,7 +414,7 @@
 					</div>
 				</div>
 			</section>
-			<section class="our-ig-contacts">
+			<section class="our-ig-contacts our-ig-contacts--white-then-dark">
 				<div class="our-ig-contacts__top">
 					<div class="our-ig-contacts__container">
 						<div class="our-ig-contacts__phone-img-block">
@@ -420,7 +424,7 @@
 					<div class="our-ig-contacts__text-block-top our-ig-contacts__text-block">
 						<div class="our-ig-contacts__container">
 							<p>
-								Наш
+								Команда
 							</p>
 							<p class="our-ig-contacts__ig-bold">
 								Instagram
@@ -498,7 +502,7 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/app.min.js?_v=20230323150105"></script>
+	<script src="js/app.min.js?_v=20230323185929"></script>
 </body>
 
 </html>
