@@ -6982,8 +6982,8 @@
             video.addEventListener("play", (function() {
                 playButton.classList.add("_active");
             }));
-            if (window.innerWidth < 600) video.removeAttribute("autoplay");
         }
+        if (window.innerWidth < 600) video.removeAttribute("autoplay");
         isWebp();
         tabs();
         formFieldsInit({
